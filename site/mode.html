@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="da">
+
+
+<head>
+  <title>Mode</title>
+  <!-- Angiver titlen på websiden, som vises i browserens faneblad. -->
+
+  <meta charset="utf-8">
+  <!-- Definerer tegnsættet som UTF-8, hvilket understøtter de fleste tegn og symboler på tværs af sprog. -->
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <!-- Angiver, hvordan siden skal skaleres på forskellige enheder. Dette gør siden responsiv, så den tilpasser sig skærmstørrelsen. -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Sikrer, at siden vises korrekt i ældre versioner af Internet Explorer (IE). -->
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,500%7CIbarra+Real+Nova:400,600,600i,700">
+  <!-- Link til eksternt stylesheet (Google Fonts), som inkluderer skrifttyperne "Roboto" og "Ibarra Real Nova". -->
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Link til Bootstrap CSS, som indeholder et framework for responsiv design og grundlæggende styling. -->
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- Link til en CSS-fil, der sandsynligvis indeholder ekstra skrifttype- eller font-styling. -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Link til den primære CSS-fil for webstedet, som styrer layout, farver, typografi osv. -->
+
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    /* Denne CSS-stil viser en meddelelsesbjælke for brugere af ældre Internet Explorer-versioner (version 10 eller lavere). */
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <!-- Viser en advarsel til brugere af ældre Internet Explorer-versioner, der opfordrer dem til at opdatere deres browser. -->
+
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <!-- Preloader-boksen vises, mens siden indlæses, hvilket giver en visuel feedback til brugeren om, at noget bliver indlæst. -->
+
+  <div class="page">
+    <header class="section page-header">
+      <!-- Header-sektionen af webstedet, som normalt indeholder navigationen. -->
+
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <!-- Navigationen er indlejret her med forskellige layouts afhængigt af skærmstørrelsen (små enheder, mellemstore enheder, store enheder osv.). -->
+
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span></div>
+          <!-- Dette element er en knap, der gør det muligt at skjule eller vise menuen på mindre skærme. -->
+
+          <div class="rd-navbar-aside-outer rd-navbar-collapse">
+            <div class="rd-navbar-aside">
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- Menu-knap, der viser eller skjuler navigationsmenuen på mindre enheder. -->
+
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="index.html"><img class="brand-logo-dark"
+                        src="images/zen-logo-rigtig.png" alt="" width="94" height="27" /><img
+                        class="brand-logo-light" src="images/zen-logo-rigtig.png" alt="" width="94"
+                        height="27" /></a>
+                    <!-- Brand-logoet for Zen Garden, der linker til hjemmesiden. -->
+                  </div>
+                </div>
+
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Hjem</a></li>
+                      <!-- Links til de forskellige sektioner på hjemmesiden. -->
+
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="tidsånden.html">Tidsånden</a></li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="mode.html">Mode</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="destinationer.html">Destinationer</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Slut på header-sektionen -->
+
+    <!-- Brødkrummestien (breadcrumb) bruges til at vise, hvor man er på websitet. -->
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(images/mode_banner.jpg)">
+      <div class="container">
+        <div class="h1 breadcrumbs-custom-title">Mode</div>
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Mode</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Hovedindholdet af Mode-sektionen -->
+    <section class="section-lg section bg-default">
+      <div class="container">
+        <div class="row row-narrow-50 row-xl-100" data-lightgallery="group">
+          <!-- En række billeder, der kan klikkes på og åbner i et lysbilledgalleri. -->
+
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".1s"><a class="gallery-thumbnail"
+              href="images/samue-adult.jpg" data-lightgallery="item"id="samue_klaede_voksen"><img
+                src="images/samue-adult.jpg" alt="" width="390" height="495" />
+              <div class="float-title">Samueklæde voksen</div>
+            </a>
+          </div>
+          <!-- Billede af samueklæde for voksne, som kan klikkes på og åbner i lysbilledgalleri. -->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s"><a class="gallery-thumbnail"
+              href="images/samue-baby.jpg" data-lightgallery="item"id="samue_klaede_baby"><img
+                src="images/samue-baby.jpg" alt="" width="390" height="495" />
+              <div class="float-title">Samueklæde baby</div>
+            </a>
+          </div>
+          <!-- Billede af samueklæde til babyer, som kan klikkes på og åbner i lysbilledgalleri. -->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s"><a class="gallery-thumbnail"
+              href="images/zori-sandaler.jpg" data-lightgallery="item"id="zori_sandaler"><img
+                src="images/zori-sandaler.jpg" alt="" width="390" height="495" />
+              <div class="float-title">Zori sandaler</div>
+            </a>
+          </div>
+          <!-- Billede-->
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+            <!-- Denne div er en kolonne i et grid-system. Den bruger "col-lg-4" til store skærme og "col-sm-6" til små skærme. Klassen "wow fadeInUp" betyder, at elementet vil få en animation, der får det til at fade ind opad. Data-atribut "data-wow-delay" definerer, hvor længe animationen skal vente, før den starter. -->
+            <a class="gallery-thumbnail" href="images/smykker.jpg" data-lightgallery="item" id="smykker">
+              <!-- Link til et billede (smykker). "data-lightgallery" aktiverer lysbilledgalleri, og "id" bruges til at referere til det på andre steder. -->
+              <img src="images/smykker.jpg" alt="" width="390" height="495" />
+              <!-- Billedet, der vises i galleriet. "alt" er tom, hvilket betyder, at der ikke er nogen alternativ tekst, hvis billedet ikke kan vises. -->
+              <div class="float-title">Smykker</div>
+              <!-- En titel, der vises over billedet. -->
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+            <!-- En anden kolonne med en lidt længere animationstid. -->
+            <a class="gallery-thumbnail" href="images/mala.jpg" data-lightgallery="item" id="mala_taske">
+              <!-- Link til et billede af en mala taske. -->
+              <img src="images/mala.jpg" alt="" width="390" height="495" />
+              <div class="float-title">Mala taske</div>
+              <!-- Titel for billedet af malatasken. -->
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+            <!-- En tredje kolonne med et endnu længere delay for animationen. -->
+            <a class="gallery-thumbnail" href="images/zafu-zabuton.jpg" data-lightgallery="item" id="zafu_og_zabuton">
+              <!-- Link til billede af Zafu og Zabuton (traditionelle meditationspuder). -->
+              <img src="images/zafu-zabuton.jpg" alt="" width="390" height="495" />
+              <div class="float-title">Zafu og zabuton</div>
+              <!-- Titel for billedet af meditationspuderne. -->
+            </a>
+          </div>
+          
+          </div>
+          <!-- Slut på row (rækken) af billeder. -->
+          </div>
+          </section>
+          <!-- Slut på sektionen, der indeholder galleri-billeder. -->
+          
+          <footer class="section footer-classic">
+            <!-- Footer-sektionen af websiden, som indeholder links, kontaktinformation og copyright. -->
+            <div class="footer-body">
+              <div class="container">
+                <div class="row justify-content-xl-between row-40 justify-content-lg-center">
+                  <!-- Container for footerens indhold. -->
+                  <div class="col-lg-6">
+                    <div class="row row-20">
+                      <!-- Sektion for links til undersider på websiden. -->
+                      <div class="col-sm-4 col-6 wow fadeInUp" data-wow-delay=".1s">
+                        <div class="footer-title">Undersider</div>
+                        <ul class="nav-list">
+                          <!-- Liste over undersider, som brugeren kan navigere til. -->
+                          <li><a href="index.html">Hjem</a></li>
+                          <li><a href="tidsånden.html">Tidsånden</a></li>
+                          <li><a href="mode.html">Mode</a></li>
+                          <li><a href="destinationer.html">Destinationer</a></li>
+                        </ul>
+                      </div>
+          
+                      <div class="col-sm-4 col-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-title">Mode</div>
+                        <ul class="nav-list">
+                          <!-- En anden liste, der linker til sektioner på Mode-siden. -->
+                          <li><a href="#samue_klaede_voksen">Samueklæde Voksen</a></li>
+                          <li><a href="#samue_klaede_baby">Samueklæde Baby</a></li>
+                          <li><a href="#zori_sandaler">Zori Sandaler</a></li>
+                          <li><a href="#smykker">Smykker</a></li>
+                          <li><a href="#mala_taske">Mala Taske</a></li>
+                          <li><a href="#zafu_og_zabuton">Zafu og Zabuton</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-lg-5 inset-right-100 wow fadeInRight" data-wow-delay=".3s">
+                    <!-- Sektion med kontaktinformation. -->
+                    <div class="footer-title">Kontakt os</div>
+                    <ul class="contact-list">
+                      <li>Hvis du vil vide mere om Zen Garden, er du velkommen til at kontakte os på:<a class="link-secondary" href="mailto:#">zengardendk@gmail.dk</a></li>
+                      <!-- E-mail link, der åbner brugerens e-mailprogram. -->
+                      <li><span>Tlf.:</span><a class="phone" href="tel:#">+45 12 34 56 78</a></li>
+                      <!-- Telefonnummer, der kan ringes op, hvis man har en enhed med opkaldsfunktion. -->
+                    </ul>
+                    <ul class="social-list">
+                      <!-- Liste over sociale medier, der linker til platforme som YouTube, Twitter, Facebook osv. -->
+                      <li><a href="#"><span class="icon fa fa-youtube-play"></span></a></li>
+                      <li><a href="#"><span class="icon fa fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="icon fa fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="icon fa fa-rss"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="footer-aside">
+              <div class="container">
+                <div class="row row-xl-40">
+                  <div class="col-12 wow fadeInUp" data-wow-delay=".2s">
+                    <p><b>MADE FOR EDUCATIONAL PURPOSES ONLY</b></p>
+                  </div>
+                  <div class="col-12 wow fadeInUp" data-wow-delay=".4s">
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Zen Garden</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+                    <!-- Copyright-meddelelse. -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+          <!-- Snackbars (til brug af globale beskeder, såsom bekræftelser eller fejlmeddelelser) -->
+          <div class="snackbars" id="form-output-global"></div>
+          
+          <!-- Links til JavaScript-filer, der styrer funktioner og animationer på websiden. -->
+          <script src="js/core.min.js"></script>
+          <script src="js/script.js"></script>
+    </body>
+   </html>

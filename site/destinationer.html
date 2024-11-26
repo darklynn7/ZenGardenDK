@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- Dokumentet er på dansk og bruger specifik klasse for animation og styling-->
+<html class="wide wow-animation" lang="da">
+
+<!-- Titel, sprogindstillinger, viewport, IE-kompatibilitet og linker til Google Fonts samt flere CSS-stylesheets for design -->
+<head>
+  <title>Destinationer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Roboto:400,500%7CIbarra+Real+Nova:400,600,600i,700">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--CSS til advarselspanel for ældre versioner af Internet Explorer med en mørk baggrund og skyggeeffekt. Panelet vises kun i IE10 eller ældre -->
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<!-- Advarselspanel for brugere med en forældet version af Internet Explorer, som opfordrer dem til at opgradere browseren.
+ Derefter vises en preloader (indlæsningsanimation) med et "Loading..."-mærke, mens siden indlæses -->
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <!--  Responsiv navigationsmenu med fastgørelse og "toggle"-funktion til små skærme. Data-attributter styrer layout og adfærd -->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span></div>
+          <div class="rd-navbar-aside-outer rd-navbar-collapse">
+            <div class="rd-navbar-aside">
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <!-- Container der gør det muligt at styre placeringen og stilen af de specifikke elementer, der findes indenfor navbaren.-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <!-- Toggle-knap til at vise/skjule menuen, med et hamburger-ikon-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!--RD Navbar Brand-->
+                  <!-- Område i navigationsmenuen, der indeholder logo-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand-->
+                    <!-- Klikbart logo, der linker til index.html, med to versioner af logoet (mørk og lys) for at tilpasse sig baggrundsfarver-->
+                    <a class="brand" href="index.html"><img class="brand-logo-dark"
+                        src="images/zen-logo-rigtig.png" alt="" width="94" height="27" /><img
+                        class="brand-logo-light" src="images/zen-logo-rigtig.png" alt="" width="94"
+                        height="27" /></a>
+                  </div>
+                </div>
+                <!-- Navigationsmenu med links til sider som "Hjem", "Tidsånden", "Mode" og "Destinationer", hvor "Destinationer" er den aktive-->
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Hjem</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="tidsånden.html">Tidsånden</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="mode.html">Mode</a>
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="destinationer.html">Destinationer</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Breadcrumbs-->
+    <!--"breadcrumbs"-sektion med en baggrundsbillede, en titel ("Destinationer") og en navigationssti med "Home" og "Destinationer"-->
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(images/destinationer_banner.jpg)"
+      data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+      <div class="container">
+        <div class="h1 breadcrumbs-custom-title">Destinationer</div>
+        <ul class="breadcrumbs-custom-path">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Destinationer</li>
+        </ul>
+      </div>
+    </section>
+    <!--Locations-->
+    <!-- Sektion med en baggrund, der indeholder en præ-title og hovedtitel ("Zen destinationer"), begge centreret og animeret med fade-in effekt-->
+    <section class="section section-lg bg-default">
+      <div class="container">
+        <div class="pre-title text-center wow fadeInUp" data-wow-delay=".1s">Steder at besøge</div>
+        <h2 class="wow fadeInUp text-center" data-wow-delay=".2s">Zen destinationer</h2>
+        <div class="row row-narrow-50 row-40 row-xl">
+          <!-- First section -->
+          <!-- To kolonner med billeder og information om steder. Hver kolonne indeholder et billede (med link), en overskrift med navnet på stedet (fx "Koya-san")
+          og en adresse med et kort ikon. Begge kolonner har en fade-in animation-->
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="thumbnail-classic"><a class="thumbnail-classic__media" href="#" id="koya-san"><img
+                  src="images/koya-san-fake.jpg" alt="" width="610" height="458" /></a>
+              <h3><a href="#">Koya-san (Koya-bjerget), Wakayama</a></h3><a class="location" href="#"><span
+                  class="icon mdi-map-marker mdi"></span>600 Koyasan, Koya-cho, Ito-gun, Wakayama, Japan</a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="thumbnail-classic"><a class="thumbnail-classic__media" href="#" id="borobudur"><img
+                  src="images/borobudur-fake.jpg" alt="" width="610" height="458" /></a>
+              <h3><a href="#">Borobudur-templet, Java, Indonesien</a></h3><a class="location" href="#"><span
+                  class="icon mdi-map-marker mdi"></span>Borobudur Temple, Jl. Badrawati, Kw. Candi Borobudur, Borobudur, Magelang Regency, Central Java, Indonesia</a>
+            </div>
+          </div>
+        </div>
+        <!-- Second section -->
+        <div class="row row-narrow-50 row-40 row-xl">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="thumbnail-classic"><a class="thumbnail-classic__media" href="#" id="ubud"><img
+                  src="images/ubud-bali-fake.jpg" alt="" width="610" height="458" /></a>
+              <h3><a href="#">Byen Ubud i Bali</a></h3><a class="location" href="#"><span
+                  class="icon mdi-map-marker mdi"></span>Ubud, Gianyar Regency, Bali, Indonesia</a>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="thumbnail-classic"><a class="thumbnail-classic__media" href="#" id="ryoanji"><img
+                  src="images/ryoanji-templet-fake.jpg" alt="" width="610" height="458" /></a>
+              <h3><a href="#">Ryoanji-templet, Kyoto</a></h3><a class="location" href="#"><span
+                  class="icon mdi-map-marker mdi"></span>Ukyo Ward, Kyoto Ryoanji Goryonoshitacho, Japan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer -->
+    <!-- Footer-sektion, der indeholder en række links til undersider på websitet (som "Hjem", "Tidsånden", "Mode", "Destinationer").
+    Linksene er organiseret i en kolonne og har en fade-in animation. Footer-sektionen er centreret og responsiv-->
+    <footer class="section footer-classic">
+      <div class="footer-body">
+        <div class="container">
+          <div class="row justify-content-xl-between row-40 justify-content-lg-center">
+            <div class="col-lg-6">
+              <div class="row row-20">
+                <!-- Links til de forskellige undersider i footer-->
+                <!-- Fade-in animation. Linksene er organiseret i en liste (<ul>) og er animeret med en forsinkelse-->
+                <div class="col-sm-4 col-6 wow fadeInUp" data-wow-delay=".1s">
+                  <div class="footer-title">Undersider</div>
+                  <ul class="nav-list">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="tidsånden.html">Tidsånden</a></li>
+                    <li><a href="mode.html">Mode</a></li>
+                    <li><a href="destinationer.html">Destinationer</a></li>
+                  </ul>
+                </div>
+                <!--Her refereres der til det forskellige indhold på undersiden-->
+                <div class="col-sm-4 col-6 wow fadeInUp" data-wow-delay=".2s">
+                  <div class="footer-title">Destinationer</div>
+                  <ul class="nav-list">
+                    <li><a href="#koya-san">Koya-san</a></li>
+                    <li><a href="#borobudur">Borobudur-templet</a></li>
+                    <li><a href="#ubud">Byen Ubud</a></li>
+                    <li><a href="#ryoanji">Ryoanji-templet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--Kontakt-->
+            <!-- En kolonne med kontaktinformationer. Den indeholder også en liste med sociale medieikoner
+            Kolonnen har en titel "Kontakt os" og en fade-in animation, der sker med en forsinkelse.-->
+            <div class="col-lg-5 inset-right-100 wow fadeInRight" data-wow-delay=".3s">
+              <div class="footer-title">Kontakt os</div>
+              <ul class="contact-list">
+                <li>Hvis du vil vide mere om Zen Garden, er du velkommen til at kontakte os på:<a class="link-secondary"
+                    href="mailto:#">zengardendk@gmail.dk</a></li>
+                <li><span>Tlf.:</span><a class="phone" href="tel:#">+45 12 34 56 78</a></li>
+              </ul>
+              <ul class="social-list">
+                <li><a href="#"><span class="icon fa fa-youtube-play"></span></a></li>
+                <li><a href="#"><span class="icon fa fa-twitter"></span></a></li>
+                <li><a href="#"><span class="icon fa fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="icon fa fa-rss"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footersektion med to afsnit. Det andet afsnit viser en copyright-meddelelse for Zen Garden med årstal og en "All Rights Reserved"-bemærkning.
+      Begge afsnit har fade-in animationer med forskellig forsinkelse -->
+      <div class="footer-aside">
+        <div class="container">
+          <div class="row row-xl-40">
+            <div class="col-12 wow fadeInUp" data-wow-delay=".2s">
+              <p><b>MADE FOR EDUCATIONAL PURPOSES ONLY</b></p>
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-delay=".4s">
+              <p class="rights"><span>&copy;&nbsp; </span><span
+                  class="copyright-year"></span><span>&nbsp;</span><span>Zen Garnden</span><span>.&nbsp;</span><span>All
+                  Rights Reserved.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- En snackbar-besked og linker til JavaScript-filer, der håndterer funktionalitet på websitet -->
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
